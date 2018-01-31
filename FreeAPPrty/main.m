@@ -14,10 +14,5 @@ int main(int argc, char * argv[]) {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
     
-    //PRUEBA
-    
-    //PRUEBA CLAU2
-    
-    //PRUEBA 3
-    
+    //PRUEBA JONI PUSH
 }
