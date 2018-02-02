@@ -76,44 +76,6 @@
             </objects>
             <point key="canvasLocation" x="114.375" y="117.25352112676056"/>
         </scene>
-        <!--FreeAPParty-->
-        <scene sceneID="2CS-Q6-Jva">
-            <objects>
-                <collectionViewController id="up6-It-u0Y" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KzU-S0-bIs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bth-j5-eho">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kSz-zv-YJ0">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="up6-It-u0Y" id="dbo-OI-FWF"/>
-                            <outlet property="delegate" destination="up6-It-u0Y" id="811-UC-wvb"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="FreeAPParty" id="mFZ-oT-kT6">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="search" id="wiO-yW-ehb"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="e1I-nB-j2l"/>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n2w-8H-GXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1961" y="117"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="upN-aF-Gi7">
             <objects>
@@ -123,12 +85,139 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="up6-It-u0Y" kind="relationship" relationship="rootViewController" id="7GB-oF-zYl"/>
+                        <segue destination="4R8-G3-3Tz" kind="relationship" relationship="rootViewController" id="fdL-Jg-X9B"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVu-HY-h85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1204" y="117"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="0mX-WM-CQY">
+            <objects>
+                <viewController id="Q6y-Wc-Rfn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVu-ZL-N7t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Cqm-zc-qFJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" selectedImage="info" id="LWt-oc-ej8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUc-bC-8aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="915"/>
+        </scene>
+        <!--Ajustes-->
+        <scene sceneID="yA3-k0-S6e">
+            <objects>
+                <viewController id="jRW-8E-Efx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S72-Me-G5s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ag9-ZO-3qV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="ajustes" selectedImage="ajustes" id="npG-My-5eq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQk-pd-Sz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="915"/>
+        </scene>
+        <!--Eventos-->
+        <scene sceneID="bjP-Ot-KP2">
+            <objects>
+                <viewController id="8xS-uA-P3g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CzK-2r-zJn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="O25-z3-tUJ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B1Q-CG-tSx">
+                                    <size key="itemSize" width="296" height="111"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gGC-l1-JrD">
+                                        <rect key="frame" x="12" y="0.0" width="296" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="296" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJk-vX-Dhy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="296" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITULO EVENTOo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-OV-sL1">
+                                                    <rect key="frame" x="10" y="13" width="277" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30-06-2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMf-3I-iJg">
+                                                    <rect key="frame" x="11" y="58" width="102" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AREA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFS-r2-N5f">
+                                                    <rect key="frame" x="174" y="58" width="102" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Kih-CZ-GvE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Eventos" image="evento-de-eleccion-en-un-calendario-con-el-simbolo-de-estrella" id="5u8-qa-JZl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg2-Zr-2vb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="915"/>
+        </scene>
+        <!--FreeAPParty-->
+        <scene sceneID="rPj-Ke-AGE">
+            <objects>
+                <tabBarController id="4R8-G3-3Tz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="FreeAPParty" id="uQ5-zg-tPz">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="search" id="Wmf-yX-KWr"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Vtd-aw-ReX"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tFp-Z6-Cix">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8xS-uA-P3g" kind="relationship" relationship="viewControllers" id="DPl-Et-W2X"/>
+                        <segue destination="Q6y-Wc-Rfn" kind="relationship" relationship="viewControllers" id="2eF-dq-zEO"/>
+                        <segue destination="jRW-8E-Efx" kind="relationship" relationship="viewControllers" id="doG-tg-sXN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-Al-7ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="117"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ajustes" width="32" height="32"/>
+        <image name="evento-de-eleccion-en-un-calendario-con-el-simbolo-de-estrella" width="32" height="32"/>
+        <image name="info" width="32" height="32"/>
+    </resources>
 </document>
