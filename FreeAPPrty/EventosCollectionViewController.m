@@ -8,10 +8,12 @@
 
 #import "EventosCollectionViewController.h"
 #import "Eventos.h"
+#import "EventosDataController.h"
 
 @interface EventosCollectionViewController (){
-    NSMutableArray* eventos;
+    
 }
+
 
 @end
 
@@ -19,8 +21,15 @@
 
 static NSString * const reuseIdentifier = @"eventoCell";
 
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.dataController = [[EventosDataController alloc] init];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //[self cargarDatos];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -29,6 +38,8 @@ static NSString * const reuseIdentifier = @"eventoCell";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,36 +57,31 @@ static NSString * const reuseIdentifier = @"eventoCell";
 }
 */
 
--(void)cargarDatos{
-    Eventos* evento1 = [[Eventos alloc]initWithName:@"Quedada1" area:@"VLC" fecha:@"29/01/2018"];
-    Eventos* evento2 = [[Eventos alloc]initWithName:@"Fiesta1" area:@"ALC" fecha:@"16/02/2018"];
-    Eventos* evento3 = [[Eventos alloc]initWithName:@"Fiesta2" area:@"VLC" fecha:@"16/02/2018"];
-    Eventos* evento4 = [[Eventos alloc]initWithName:@"Acampada" area:@"ALB" fecha:@"23/02/2018"];
-    
-    eventos = [[NSMutableArray alloc]initWithObjects:evento1, evento2, evento3, evento4, nil];
-}
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return [eventos count];
+    return [self.dataController countOfList];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    //Creamos la celda a partir del identificador de celda de nuestra vista de Eventos.
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"eventoCell" forIndexPath:indexPath];
+    //Nos creamos un evento a partir del evento que este en esa posicion de la lista.
+    Eventos* eventoAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
+    //Añadimos la informacion del evento a los labels de la celda.
+    UILabel* eventoLabel = (UILabel*) [cell viewWithTag:1];
+    eventoLabel.text = eventoAtIndex.nombre;
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    UIImageView *imagenEvento = (UIImageView *)[cell viewWithTag:100];
-    imagenEvento.image = [UIImage imageNamed:@"fondo1"];
+    UILabel* areaLabel = (UILabel*) [cell viewWithTag:2];
+    areaLabel.text = eventoAtIndex.area;
     
-    
-    // Configure the cell
+    UILabel* fechaLabel = (UILabel*) [cell viewWithTag:3];
+    fechaLabel.text = eventoAtIndex.fecha;
     
     return cell;
 }
