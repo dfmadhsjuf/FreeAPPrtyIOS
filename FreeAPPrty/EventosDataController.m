@@ -17,8 +17,6 @@
 
 -(void) initializeDefaultDataList{
     //Inicializamos nuestra lista de eventos.
-    //NSMutableArray* eventosList = [[NSMutableArray alloc] init];
-    //Relacionamos nuestra lista con nuestra masterEventosList que es la que usara el View Controller de los Eventos.
     _masterEventosList =  [[NSMutableArray alloc] init];
     
     //Cargamos los eventos iniciales.
