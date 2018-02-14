@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB60A3C3202AF6D700DECAF2 /* Eventos.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60A3C2202AF6D700DECAF2 /* Eventos.m */; };
 		FB60A3C6202B01FD00DECAF2 /* EventosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60A3C5202B01FD00DECAF2 /* EventosCollectionViewController.m */; };
+		FBE2EF66202D950F00434505 /* EventosDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE2EF65202D950F00434505 /* EventosDataController.m */; };
 		FBF0056A202AFF5000183CC8 /* tabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF00569202AFF5000183CC8 /* tabbarController.m */; };
 		FBF0056D202AFF9700183CC8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF0056C202AFF9700183CC8 /* LoginViewController.m */; };
 		FBF00570202B001F00183CC8 /* AddEventoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF0056F202B001F00183CC8 /* AddEventoViewController.m */; };
@@ -43,6 +44,8 @@
 		FB60A3C2202AF6D700DECAF2 /* Eventos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eventos.m; sourceTree = "<group>"; };
 		FB60A3C4202B01FD00DECAF2 /* EventosCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventosCollectionViewController.h; sourceTree = "<group>"; };
 		FB60A3C5202B01FD00DECAF2 /* EventosCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventosCollectionViewController.m; sourceTree = "<group>"; };
+		FBE2EF64202D950F00434505 /* EventosDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventosDataController.h; sourceTree = "<group>"; };
+		FBE2EF65202D950F00434505 /* EventosDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventosDataController.m; sourceTree = "<group>"; };
 		FBF00568202AFF5000183CC8 /* tabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabbarController.h; sourceTree = "<group>"; };
 		FBF00569202AFF5000183CC8 /* tabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabbarController.m; sourceTree = "<group>"; };
 		FBF0056B202AFF9700183CC8 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				FBF0A6AA20188B5E00B12A03 /* main.m */,
 				FB60A3C1202AF6D700DECAF2 /* Eventos.h */,
 				FB60A3C2202AF6D700DECAF2 /* Eventos.m */,
+				FBE2EF64202D950F00434505 /* EventosDataController.h */,
+				FBE2EF65202D950F00434505 /* EventosDataController.m */,
 				FB60A3C4202B01FD00DECAF2 /* EventosCollectionViewController.h */,
 				FB60A3C5202B01FD00DECAF2 /* EventosCollectionViewController.m */,
 				FBF00568202AFF5000183CC8 /* tabbarController.h */,
@@ -289,6 +294,7 @@
 				FBF0A6AB20188B5E00B12A03 /* main.m in Sources */,
 				FB60A3C6202B01FD00DECAF2 /* EventosCollectionViewController.m in Sources */,
 				FBF0056D202AFF9700183CC8 /* LoginViewController.m in Sources */,
+				FBE2EF66202D950F00434505 /* EventosDataController.m in Sources */,
 				FBF0A69D20188B5E00B12A03 /* AppDelegate.m in Sources */,
 				FBF00570202B001F00183CC8 /* AddEventoViewController.m in Sources */,
 				FBF0056A202AFF5000183CC8 /* tabbarController.m in Sources */,
