@@ -17,5 +17,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *indicaciones;
 @property (weak, nonatomic) IBOutlet UITextField *ubicacionEvento;
 @property (weak, nonatomic) IBOutlet UITextView *comentariosEvento;
+@property (weak, nonatomic) IBOutlet UITextField *asuntoAcampada;
+@property (weak, nonatomic) IBOutlet UITextView *actividadesAcampada;
+
+- (IBAction)done:(UIStoryboardSegue *)segue;
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
 
 @end
